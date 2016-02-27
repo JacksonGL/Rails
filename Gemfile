@@ -53,6 +53,8 @@ group :development, :test do
   gem 'sqlite3'
   # gem 'debugger'
   gem 'jasmine-rails'
+  # coveralls gem take care of your badge
+  gem 'coveralls'
 end
 
 group :development do
