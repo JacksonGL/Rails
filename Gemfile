@@ -11,6 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'coveralls', require: false
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -53,8 +54,6 @@ group :development, :test do
   gem 'sqlite3'
   # gem 'debugger'
   gem 'jasmine-rails'
-  # coveralls gem take care of your badge
-  gem 'coveralls'
 end
 
 group :development do
