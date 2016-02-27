@@ -35,11 +35,24 @@ group :production do
   gem 'pg'
 end
 
+group :test do
+  gem 'rspec-rails'
+  gem 'simplecov', :require => false
+  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails-training-wheels'
+  gem 'database_cleaner' # required by Cucumber
+  gem 'autotest-rails'
+  gem 'factory_girl_rails'
+  gem 'metric_fu'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  # gem 'debugger'
+  gem 'jasmine-rails'
 end
 
 group :development do
